@@ -1,10 +1,10 @@
 ﻿@model parcial.Models.cliente
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar Transacciòn";
 }
 
-<h2>Edit</h2>
+<h2></h2>
 
 
 @using (Html.BeginForm())
@@ -59,14 +59,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-success" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <p><a class="btn btn-danger" href="http://localhost:49256/Home/Index">Regresar</a></p>
 </div>
 
 @section Scripts {

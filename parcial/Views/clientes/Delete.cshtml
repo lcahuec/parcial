@@ -4,11 +4,10 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Eliminar Transacciòn</h2>
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>cliente</h4>
+    <h4>Cliente</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -57,8 +56,10 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Delete" class="btn btn-warning" /> 
+         
+  
         </div>
+                  <p><a class="btn btn-danger" href="http://localhost:49256/Home/Index">Regresar</a></p>
     }
 </div>
