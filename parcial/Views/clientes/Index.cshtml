@@ -26,32 +26,35 @@
         <th>
             @Html.DisplayNameFor(model => model.monto)
         </th>
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.no_cuenta)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellido)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.concepto_pago)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.monto)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id_cliente }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id_cliente }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id_cliente })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.no_cuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.concepto_pago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monto)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_cliente }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_cliente }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_cliente })
+            </td>
+        </tr>
+    }
 
 </table>
+<p><a class="btn btn-danger" href="http://localhost:49256/Home/Index">Menu Principal</a></p>
