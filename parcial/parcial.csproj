@@ -214,11 +214,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bancoModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\cliente.cs">
       <DependentUpon>bancoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MetaDataCliente.cs" />
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>bancoModel.tt</DependentUpon>
     </Compile>
