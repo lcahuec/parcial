@@ -20,7 +20,7 @@ namespace parcial.Models
             public string apellido { get; set; }
             [Display(Name = "Concepto de Pago")]
             public string concepto_pago { get; set; }
-            [Display(Name = "Monto Q.")]
+            [Display(Name = "Monto: Q.")]
             public decimal monto { get; set; }
         
 
