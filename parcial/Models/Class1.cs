@@ -11,7 +11,7 @@ namespace parcial.Models
      
             public int id_cliente { get; set; }
             [Required]
-            [Display(Name = "No. Cuenta")]
+            [Display(Name = "No Cuenta")]
 
             public string no_cuenta { get; set; }
             [Display(Name = "Nombre")]
